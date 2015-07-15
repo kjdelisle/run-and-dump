@@ -10,6 +10,13 @@ and write to a specified dumpFile (or use the procdump defaults if omitted).
 * dumpFile: The filePath to write the dump file to. Uses procdump defaults if omitted.
 
 ## Examples:
+#### Powershell Session
+```
+runAndDump.ps1 -program node -params run.js -sleepTime 30 -dumpFile crazyAwesomeBinaryDump.dmp
+```
+
+
+#### Command Prompt (cmd.exe)
 ```
 Powershell -File runAndDump.ps1 -program node -params run.js -sleepTime 30 -dumpFile crazyAwesomeBinaryDump.dmp
 ```
